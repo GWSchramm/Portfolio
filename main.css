@@ -1,7 +1,7 @@
 :root{
     /*--headerBg: #0a5180;*/
-    --headerBg: #466870;
-    --mainBg: #559CAD;
+    /*--mainBg: #559CAD;*/
+    --mainBg: #466870;
     --mainFontCol: white;
     --headFont: "Cooper Black";
     --bodyFont: "Cooper BT";
@@ -23,22 +23,32 @@ header span{
     font-size: xx-large;
     text-align: center;
     padding: 50px;
-    background-color: var(--headerBg);
+    /*background-color: var(--headerBg);*/
+    
 }
 header{
-    background: var(--headerBg);
+    /*background: var(--headerBg);*/
     color: var(--mainFontCol);
     font-family: var(--bodyFont);
     text-align: center;
     border-radius: 15px;
+    text-shadow: 2px 2px 2px black;
 }
 h1{
     font-size:40px;
+    text-shadow: 2px 2px 2px black;
+    font-family: var(--headFont);
+    color: var(--mainFontCol);
+    text-align: center;
 }
 
 body{
     /*background: var(--mainBg);*/
-    background: var(--headerBg);
+    background: var(--mainBg);
+    background-image: url("images/Artboard\ 1@4x.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 80% 100%;
 }
 
 
@@ -53,26 +63,27 @@ body{
     margin: 150px;
     
 }
-
-a:hover{
+#navBar a:hover{
+    text-decoration: none;
     color: gray;
 }
 
 
 #demoReel{
-    background: var(--headerBg);
+    /*background: var(--headerBg);*/
     color: var(--mainFontCol);
     font-family: var(--headFont);
     text-align: center;
     border-radius: 15px;
 }
 #demoReel h1{
-    background: var(--headerBg);
+    /*background: var(--headerBg);*/
     color: var(--mainFontCol);
     font-family: var(--headFont);
     text-align: center;
     border-radius: 15px;
     padding: 15px;
+    text-shadow: 2px 2px 2px black;
     
 }
 #demoReel a{
@@ -88,16 +99,24 @@ a:hover{
 
 
 #myWorks h1{
-    background: var(--headerBg);
+    /*background: var(--headerBg);*/
     color: var(--mainFontCol);
     font-family: var(--headFont);
     text-align: center;
     border-radius: 15px;
     padding: 15px;
+    text-shadow: 2px 2px 2px black;
 }
-.videoGrid{
+.videoGrid1{
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+    padding: 0.5rem;
+    /*border: 1px solid black; */
+}
+.videoGrid2{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 0.5rem;
     padding: 0.5rem;
     /*border: 1px solid black; */
@@ -110,17 +129,58 @@ a:hover{
     color: var(--mainFontCol);
     font-family: var(--bodyFont);
     font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+}
+.video ul{
+    list-style-type: none;
+}
+.video a{
+    color: var(--mainFontCol);
+    text-decoration: none;
+}
+.video a:hover{
+    color: gray;
+}
+#skatePack img:hover{
+    transition: transform .2s ;
+}
+#skatePack img:hover{
+    transform: scale(1.1);
 }
 
 
+#audioAmp{
+    /*background: var(--headerBg);*/
+    color: var(--mainFontCol);
+    font-family: var(--headFont);
+    text-align: center;
+    border-radius: 15px;
+}
+#audioAmp p{
+    color: var(--mainFontCol);
+    font-family: var(--bodyFont);
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+    
+}
+#audioAmp a{
+    color: var(--mainFontCol);
+    text-decoration: none;
+}
+#audioAmp a:hover{
+    color: gray;
+}
+
 
 #aboutMe h1{
-    background: var(--headerBg);
+    /*background: var(--headerBg);*/
     color: var(--mainFontCol);
     font-family: var(--headFont);
     text-align: center;
     border-radius: 15px;
     padding: 15px;
+    text-shadow: 2px 2px 2px black;
 }
 #aboutMe table{
     margin-left: 30%;
@@ -130,23 +190,34 @@ a:hover{
     color: var(--mainFontCol);
     font-family: var(--bodyFont);
     font-weight: bold;
+    text-shadow: 2px 2px 2px black;
     
 }
 
 
 #contactMe h1{
-    background: var(--headerBg);
+    /*background: var(--headerBg);*/
     color: var(--mainFontCol);
     font-family: var(--headFont);
     text-align: center;
     border-radius: 15px;
     padding: 15px;
+    text-shadow: 2px 2px 2px black;
 }
 #contactMe p{
     color: var(--mainFontCol);
     font-family: var(--bodyFont);
     text-align: center;
     font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+}
+#contactMe a{
+    text-decoration: none;
+    color: var(--mainFontCol);
+}
+#contactMe a:hover{
+    text-decoration: none;
+    color: gray;
 }
 
 
