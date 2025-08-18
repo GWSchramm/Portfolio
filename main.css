@@ -1,7 +1,8 @@
-:root{
+:root {
     /*--headerBg: #0a5180;*/
     /*--mainBg: #559CAD;*/
-    --mainBg: #466870;
+    /*--mainBg: #466870;*/
+    --mainBg: #1d2832;
     --mainFontCol: white;
     --headFont: "Cooper Black";
     --bodyFont: "Cooper BT";
@@ -23,6 +24,7 @@ header span{
     font-size: xx-large;
     text-align: center;
     padding: 50px;
+    font-size: 50px;
     /*background-color: var(--headerBg);*/
     
 }
@@ -32,7 +34,7 @@ header{
     font-family: var(--bodyFont);
     text-align: center;
     border-radius: 15px;
-    text-shadow: 2px 2px 2px black;
+    /*text-shadow: 2px 2px 2px black;*/
 }
 h1{
     font-size:40px;
@@ -42,11 +44,14 @@ h1{
     text-align: center;
 }
 
-body{
-    /*background: var(--mainBg);*/
-    background: var(--mainBg);
-    background-image: url("images/Artboard\ 1@4x.png");
-    background-repeat: no-repeat;
+body {
+    /*
+        background-image: url("images/Artboard\ 1@4x.png");
+        background-repeat: no-repeat;
+        background: var(--mainBg);
+    */
+    background: #1D2832;
+    background: linear-gradient(180deg, rgba(29, 40, 50, 1) 0%, rgba(70, 104, 112, 1) 50%, rgba(29, 40, 50, 1) 100%);
     background-position: top;
     background-size: 80% 100%;
 }
