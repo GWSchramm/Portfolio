@@ -14,169 +14,108 @@
 </head>
 
 <body>
+
     <header>
-        
 
         <div id="navBar">
-
-
-            <span>
+            <span class="site-title">
                 Schramm Audio
-
-                <!--
-                <a href="#navBar">
-                   <img src="images/Whitney Schramm ALPHA.gif"
-                   alt="Moving Logo"
-                   width="25%"
-                   height="25%">
-                </a>
-                -->
             </span>
-            <br>
 
-            <a href="#theActualReel">DEMO REEL</a>
-            <a href="#myWorks">WORKS</a>
-            <a href="#contactMe">CONTACT</a>
+            <nav>
+                <a href="#theActualReel">DEMO REEL</a>
+                <a href="#myWorks">WORKS</a>
+                <a href="#contactMe">CONTACT</a>
+            </nav>
         </div>
 
     </header>
 
     <hr width="75%">
-    
+
+
+
 
     <section id="demoReel">
         <h1><a href="#theActualReel"> DEMO REEL</a></h1>
 
         <video id="theActualReel" src="Videos/DEMO_REEL_1.mp4"
-            controls
-            width="75%"
-            height="75%"
-            poster="images/Demo_Reel_thumbnail.jpg"
-            >
-        
+               controls
+               poster="images/Demo_Reel_thumbnail.jpg">
         </video>
 
         <hr width="75%">
     </section>
 
+
+
+
+
     <section id="myWorks">
         <h1>INDIVIDUAL WORKS</h1>
 
-        <div class="projectGrid1">
-            <div class="project">
-                <video src="Videos/MegaMan_Redesign_Final.mp4"
-                    controls 
-                    width="90%" 
-                    height="90%" 
-                    poster="images/MegaMan Redesign Thumbnail.jpg">
+        <div class="portfolio-grid">
+
+            <!-- Row 1: full width -->
+            <div class="portfolio-item span-2">
+                <video controls poster="images/WOW_thumbnail.jpg">
+                    <source src="Videos/WoW_Cataclysm_2.mp4">
                 </video>
-                <br>
-                Mega Man Joins the Battle!<br>
-                Sound Redesign
+                <p>World of Warcraft: Cataclysm<br>Sound Redesign</p>
             </div>
 
-            <div class="project"> 
-                <video src="Videos/Metroid_Prime_Redesign_Final.mp4" 
-                    controls 
-                    width="90%" 
-                    height="90%"
-                    poster="images/Metroid_Prime_Redesign_thumbnail.jpg">
+
+            <!-- Row 2 -->
+            <div class="portfolio-item">
+                <video controls poster="images/MegaMan Redesign Thumbnail.jpg">
+                    <source src="Videos/MegaMan_Redesign_Final.mp4">
                 </video>
-                <br>
-                Metroid Prime Remastered<br>            
-                Sound Redesign
+                <p>Mega Man Joins the Battle!<br>Sound Redesign</p>
             </div>
 
-            <div class="project">
-                <video src="Videos/BoomerangFu_Redesign_Final.mp4" 
-                    controls 
-                    width="90%" 
-                    height="90%"
-                    poster="images/grillingspree_keyart_1920x1080.jpg">
+            <div class="portfolio-item">
+                <video controls poster="images/Metroid_Prime_Redesign_thumbnail.jpg">
+                    <source src="Videos/Metroid_Prime_Redesign_Final.mp4">
                 </video>
-                <br>
-                Boomerang Fu <br>
-                Sound Redesign
-            </div>
-        
-
-            <div class="project">
-                <video src="Videos/Tony_Hawk_Redesign_Final.mp4" 
-                    controls 
-                    width="90%" 
-                    height="90%" 
-                    poster="images/Tony_Hawk_thumbnail.jpg">
-                </video>
-                <br>
-                Tony Hawk's Pro Skater
-                <br>
-                Sound Redesign
+                <p>Metroid Prime Remastered<br>Sound Redesign</p>
             </div>
 
-            <!--<div class="project">
-                <video src="Videos/AudioAmp_1.mp4" 
-                    controls 
-                    width="90%" 
-                    height="90%" 
-                    poster="images/AudioAmp Thumbnail.jpg">
+
+            <!-- Row 3 -->
+            <div class="portfolio-item">
+                <video controls poster="images/grillingspree_keyart_1920x1080.jpg">
+                    <source src="Videos/BoomerangFu_Redesign_Final.mp4">
                 </video>
-                <br>
-                Audio Hardware
-            </div> -->
-        </div>
-        
-        <div class="projectGrid2">
-            <!-- <div class="project">
+                <p>Boomerang Fu<br>Sound Redesign</p>
+            </div>
 
-         <br>
-         Sanctuary
-         <br>
-         Produced & Directed by John Cheney
-         <br><br>
-             <img src="images/Sanctuary.jpg" height="250px">
-         <br>
-             Boom Operator<br>
-             Sound Mixer
+            <div class="portfolio-item">
+                <video controls poster="images/Tony_Hawk_thumbnail.jpg">
+                    <source src="Videos/Tony_Hawk_Redesign_Final.mp4">
+                </video>
+                <p>Tony Hawk’s Pro Skater<br>Sound Redesign</p>
+            </div>
 
-     </div> -->
 
-            <div class="project">
-
-                <br>
-                Skateboard FX Pack
-                <br><br><br>
-
+            <!-- Row 4: full width content -->
+            <div class="portfolio-item span-2">
+                <h2>Skateboard FX Pack</h2>
                 <div id="skatePack">
-                    <a href="files/Stakeboard FX Pack.zip" download="Skateboard FX Pack.zip">
-                        <img src="images/SkateFXPack.png" height="250px">
+                    <a href="files/Stakeboard FX Pack.zip" download>
+                        <img src="images/SkateFXPack.png" alt="Skate FX Pack">
                     </a>
                 </div>
-
-                <br>
-                Click to Download
-                <br><br>
-                All sound effects recorded by me
-
+                <p>Click to Download<br>All sound effects recorded by me</p>
             </div>
 
-            <!-- <div class="project">
-
-                 <br>
-                 Audio Amplifier
-                 <br><br><br>
-                     <img src="images/AudioAmp Thumbnail.jpg" height="250px">
-                 <br><br>
-                 <a href="Amp.html" target="_blank">Click here for details</a>
-                 <br>
-
-             </div> -->
-         </div>
+        </div>
+    </section>
 
 
-         </div>
 
-         <hr width="75%">
-     </section>
+
+
+
 
     <!--<section id="aboutMe">
          <h1>ABOUT ME</h1>
@@ -184,22 +123,33 @@
          <hr width="75%">
      </section>-->
 
-            <section id="contactMe">
-                <h1>CONTACT ME</h1>
-                <p>
-                    <img src="images/me3.jpeg" height="375px">
-                    <br>
-                    <br>
-                    Email: <a href="mailto: garrett.whitney.schramm@gmail.com">GARRETT.WHITNEY.SCHRAMM@GMAIL.COM</a>
 
-                </p>
-                <a class="cert" href="https://www.credly.com/badges/ed0dbd1a-7f31-42cf-a666-77c8ed995374/public_url" target="_blank">
-                    <img src="images/avid-certified-pro-tools-specialist.png" height="80px">
-                </a>
-                <hr width="75%">
-            </section>
 
-            <button onclick="topFunction()" id="topBtn" title="Go to top">^</button>
+
+
+
+    <section id="contactMe">
+        <h1>CONTACT ME</h1>
+        <p>
+            <img src="images/me3.jpeg" height="375px">
+            <br>
+            <br>
+            Email: <a href="mailto: garrett.whitney.schramm@gmail.com">GARRETT.WHITNEY.SCHRAMM@GMAIL.COM</a>
+
+        </p>
+
+        <a class="cert" href="https://www.credly.com/badges/ed0dbd1a-7f31-42cf-a666-77c8ed995374/public_url" target="_blank">
+            <img src="images/avid-certified-pro-tools-specialist.png" height="80px">
+        </a>
+        <hr width="75%">
+    </section>
+
+
+
+
+
+
+    <button onclick="topFunction()" id="topBtn" title="Go to top">^</button>
 
 </body>
 </html>
