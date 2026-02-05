@@ -25,11 +25,9 @@ header span{
     text-align: center;
     padding: 50px;
     font-size: 50px;
-    /*background-color: var(--headerBg);*/
-    
+   
 }
 header{
-    /*background: var(--headerBg);*/
     color: var(--mainFontCol);
     font-family: var(--bodyFont);
     text-align: center;
@@ -45,15 +43,28 @@ h1{
 }
 
 body {
-    /*
-        background-image: url("images/Artboard\ 1@4x.png");
-        background-repeat: no-repeat;
-        background: var(--mainBg);
-    */
-    background: #1D2832;
-    background: linear-gradient(180deg, rgba(29, 40, 50, 1) 0%, rgba(70, 104, 112, 1) 50%, rgba(29, 40, 50, 1) 100%);
-    background-position: top;
-    background-size: 80% 100%;
+    background-image: url('images/bg_imgs/mix_console_2.jpg');
+    background-size: cover; /* makes the image fill the section */
+    background-position: center top; /* adjust which part is visible */
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* semi-transparent black overlay */
+    z-index: 1;
+}
+
+/* Make body content appear above overlay */
+body > * {
+    position: relative;
+    z-index: 2;
 }
 
 
@@ -127,14 +138,21 @@ body {
     height: auto;
     display: block;
     margin: 0 auto; /* center the video */
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
 }
 
 
-#myWorks{
-    background: black;
+#lowerHalf {
+    background: linear-gradient(180deg, rgba(29, 40, 50, 1) 0%, rgba(70, 104, 112, 1) 50%, rgba(29, 40, 50, 1) 100%);
+    width: 100vw;
+    margin-left: calc(-50vw + 50%); /* counter any container centering */
+    padding: 2rem 0; /* vertical padding */
 }
-#myWorks h1{
+
+#myWorks {
+
+}
+#soundDesign h1{
     /*background: var(--headerBg);*/
     color: var(--mainFontCol);
     font-family: var(--headFont);
@@ -182,6 +200,17 @@ body {
     border-radius: 5px;
 }
 
+@media (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .span-2 {
+        grid-column: span 1;
+    }
+}
+
+
 
 #skatePack img {
     max-width: 25%; /* scales smaller on desktop */
@@ -193,14 +222,13 @@ body {
 }
 #skatePack img:hover{
     transition: transform .2s ;
-}
-#skatePack img:hover{
     transform: scale(1.1);
 }
 
 
 
-#aboutMe h1{
+
+#filmWork h1 {
     /*background: var(--headerBg);*/
     color: var(--mainFontCol);
     font-family: var(--headFont);
@@ -210,6 +238,64 @@ body {
     text-shadow: 2px 2px 2px black;
 }
 
+.film-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* up to 3 columns if space allows */
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.film-grid a {
+    text-decoration: none;
+}
+.film-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+}
+.film-item img {
+  width: 100px;      /* set width here */
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  flex-shrink: 0;    /* prevents image from shrinking */
+}
+.film-item:hover {
+    transition: transform .2s;
+    transform: scale(1.1);
+}
+
+
+.film-info p {
+margin: 0.2rem 0;
+color: var(--mainFontCol);
+font-family: var(--bodyFont);
+font-weight: bold;
+text-shadow: 2px 2px 2px black;
+}
+
+@media (max-width: 768px) {
+    .film-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+        .film-item img {
+            width: 60%; /* narrower on mobile, still proportional */
+            height: auto;
+            margin-bottom: 0.5rem;
+        }
+
+    .film-info p {
+        font-size: 0.95rem;
+    }
+}
 
 #contactMe h1{
     /*background: var(--headerBg);*/
@@ -231,19 +317,27 @@ body {
     text-decoration: none;
     color: var(--mainFontCol);
 }
+#contactMe img {
+    border-radius:5px;
+}
 #contactMe a:hover{
     text-decoration: none;
     color: gray;
 }
 
 
-.cert img{
+.cert img {
     background-color: white;
     border-radius: 15px;
     position: fixed;
     bottom: 30px;
     left: 15px;
     z-index: 99;
+    transition: transform 0.2s;
+}
+.cert img:hover {
+    transition: transform .2s;
+    transform: scale(1.1);
 }
 
 
@@ -269,12 +363,3 @@ body {
     color: black;
 }
 
-@media (max-width: 768px) {
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .span-2 {
-        grid-column: span 1;
-    }
-}
