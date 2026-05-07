@@ -41,8 +41,9 @@ h1{
 
 body {
     background-image: url('images/bg_imgs/mix_console_2.jpg');
-   background-size: cover; /* makes the image fill the section */
+    background-size: cover; /* makes the image fill the section */
     background-position: center top; /* adjust which part is visible */
+    background-attachment: fixed; /* image wont scroll with user */
     background-repeat: no-repeat;
     height: 100vh;
 }
